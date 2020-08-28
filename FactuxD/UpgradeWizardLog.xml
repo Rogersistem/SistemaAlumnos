@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="_UpgradeWizard_Files\UpgradeWizardLog.xslt"?>
+<log>
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\Lenovo\Desktop\Sistema_CipostUNT\FactuxD\FactuxD\Sistema_CipostUNT.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\Lenovo\Desktop\Sistema_CipostUNT\FactuxD\FactuxD\App.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\Users\Lenovo\Desktop\Sistema_CipostUNT\FactuxD\FactuxD\App.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\Users\Lenovo\Desktop\Sistema_CipostUNT\FactuxD\FactuxD\App.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\Users\Lenovo\Desktop\Sistema_CipostUNT\FactuxD\FactuxD\App.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\Users\Lenovo\Desktop\Sistema_CipostUNT\FactuxD\FactuxD\App.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\Users\Lenovo\Desktop\Sistema_CipostUNT\FactuxD\FactuxD\App.config" />
+  <event action="Analyze" type="Success" name="App.config" path="C:\Users\Lenovo\Desktop\Sistema_CipostUNT\FactuxD\FactuxD\App.config" />
+  <event action="Analyze" type="Success" name="Asistencia.resx" path="C:\Users\Lenovo\Desktop\Sistema_CipostUNT\FactuxD\FactuxD\Asistencia.resx" />
+  <event action="Analyze" type="Success" name="BackupDba.resx" path="C:\Users\Lenovo\Desktop\Sistema_CipostUNT\FactuxD\FactuxD\BackupDba.resx" />
+  <event action="Analyze" type="Success" name="Calculadora.resx" path="C:\Users\Lenovo\Desktop\Sistema_CipostUNT\FactuxD\FactuxD\Calculadora.resx" />
+  <event action="Analyze" type="Success" name="ContenedorPrincipal.resx" path="C:\Users\Lenovo\Desktop\Sistema_CipostUNT\FactuxD\FactuxD\ContenedorPrincipal.resx" />
+  <event action="Analyze" type="Success" name="FormMantenimiento.resx" path="C:\Users\Lenovo\Desktop\Sistema_CipostUNT\FactuxD\FactuxD\FormMantenimiento.resx" />
+  <event action="Analyze" type="Success" name="Interfaz_Entrada.resx" path="C:\Users\Lenovo\Desktop\Sistema_CipostUNT\FactuxD\FactuxD\Interfaz_Entrada.resx" />
+  <event action="Analyze" type="Success" name="Mant_Programas.resx" path="C:\Users\Lenovo\Desktop\Sistema_CipostUNT\FactuxD\FactuxD\Mant_Programas.resx" />
+  <event action="Analyze" type="Success" name="MantAlumnos.resx" path="C:\Users\Lenovo\Desktop\Sistema_CipostUNT\FactuxD\FactuxD\MantAlumnos.resx" />
+  <event action="Analyze" type="Success" name="MantCursos.resx" path="C:\Users\Lenovo\Desktop\Sistema_CipostUNT\FactuxD\FactuxD\MantCursos.resx" />
+  <event action="Analyze" type="Success" name="MantenedorDocentes.resx" path="C:\Users\Lenovo\Desktop\Sistema_CipostUNT\FactuxD\FactuxD\MantenedorDocentes.resx" />
+  <event action="Analyze" type="Success" name="Matricula.resx" path="C:\Users\Lenovo\Desktop\Sistema_CipostUNT\FactuxD\FactuxD\Matricula.resx" />
+  <event action="Analyze" type="Success" name="Notas.resx" path="C:\Users\Lenovo\Desktop\Sistema_CipostUNT\FactuxD\FactuxD\Notas.resx" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\Lenovo\Desktop\Sistema_CipostUNT\FactuxD\FactuxD\packages.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\Users\Lenovo\Desktop\Sistema_CipostUNT\FactuxD\FactuxD\packages.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\Users\Lenovo\Desktop\Sistema_CipostUNT\FactuxD\FactuxD\packages.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\Users\Lenovo\Desktop\Sistema_CipostUNT\FactuxD\FactuxD\packages.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\Users\Lenovo\Desktop\Sistema_CipostUNT\FactuxD\FactuxD\packages.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\Users\Lenovo\Desktop\Sistema_CipostUNT\FactuxD\FactuxD\packages.config" />
+  <event action="Analyze" type="Success" name="packages.config" path="C:\Users\Lenovo\Desktop\Sistema_CipostUNT\FactuxD\FactuxD\packages.config" />
+  <event action="Analyze" type="Success" name="Pagos.resx" path="C:\Users\Lenovo\Desktop\Sistema_CipostUNT\FactuxD\FactuxD\Pagos.resx" />
+  <event action="Analyze" type="Success" name="Resources.resx" path="C:\Users\Lenovo\Desktop\Sistema_CipostUNT\FactuxD\FactuxD\Properties\Resources.resx" />
+  <event action="Analyze" type="Success" name="RegistroAlumnos.resx" path="C:\Users\Lenovo\Desktop\Sistema_CipostUNT\FactuxD\FactuxD\RegistroAlumnos.resx" />
+  <event action="Analyze" type="Success" name="RegistroUsuarios.resx" path="C:\Users\Lenovo\Desktop\Sistema_CipostUNT\FactuxD\FactuxD\RegistroUsuarios.resx" />
+  <event action="Analyze" type="Success" name="Reporte_Pagos.resx" path="C:\Users\Lenovo\Desktop\Sistema_CipostUNT\FactuxD\FactuxD\Reporte_Pagos.resx" />
+  <event action="Analyze" type="Success" name="ReporteMatricula.resx" path="C:\Users\Lenovo\Desktop\Sistema_CipostUNT\FactuxD\FactuxD\ReporteMatricula.resx" />
+  <event action="Analyze" type="Success" name="ReporteNotas.resx" path="C:\Users\Lenovo\Desktop\Sistema_CipostUNT\FactuxD\FactuxD\ReporteNotas.resx" />
+  <event action="Analyze" type="Success" name="ReporteTeleric.resx" path="C:\Users\Lenovo\Desktop\Sistema_CipostUNT\FactuxD\FactuxD\ReporteTeleric.resx" />
+  <event action="Analyze" type="Success" name="VentanaAdmin.resx" path="C:\Users\Lenovo\Desktop\Sistema_CipostUNT\FactuxD\FactuxD\VentanaAdmin.resx" />
+  <event action="Analyze" type="Success" name="VentanaLogin.resx" path="C:\Users\Lenovo\Desktop\Sistema_CipostUNT\FactuxD\FactuxD\VentanaLogin.resx" />
+  <event action="Analyze" type="Success" name="VentanaUser.resx" path="C:\Users\Lenovo\Desktop\Sistema_CipostUNT\FactuxD\FactuxD\VentanaUser.resx" />
+  <event action="Analyze" type="Success" name="Sistema_CipostUNT" path="C:\Users\Lenovo\Desktop\Sistema_CipostUNT\FactuxD\FactuxD\Sistema_CipostUNT.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\Lenovo\Desktop\Sistema_CipostUNT\FactuxD\MyLibreri\MyLibreri.csproj" />
+  <event action="Analyze" type="Success" name="MyLibreri" path="C:\Users\Lenovo\Desktop\Sistema_CipostUNT\FactuxD\MyLibreri\MyLibreri.csproj" />
+  <event action="Analyze" type="Success" name="FactuxD" path="C:\Users\Lenovo\Desktop\Sistema_CipostUNT\FactuxD\FactuxD.sln" />
+  <event action="Backup" type="Success" name="Sistema_CipostUNT" path="C:\Users\Lenovo\Desktop\Sistema_CipostUNT\FactuxD\FactuxD\Sistema_CipostUNT.csproj" />
+  <event action="Upgrade" type="Success" name="Assembly References" path="C:\Users\Lenovo\Desktop\Sistema_CipostUNT\FactuxD\FactuxD\Sistema_CipostUNT.csproj" />
+  <event action="Upgrade" type="Success" name="Sistema_CipostUNT" path="C:\Users\Lenovo\Desktop\Sistema_CipostUNT\FactuxD\FactuxD\Sistema_CipostUNT.csproj" />
+  <event action="Upgrade" type="Success" name="FactuxD" path="C:\Users\Lenovo\Desktop\Sistema_CipostUNT\FactuxD\FactuxD.sln" />
+</log>

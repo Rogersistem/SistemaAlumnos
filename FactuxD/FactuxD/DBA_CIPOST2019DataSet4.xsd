@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DBA_CIPOST2019DataSet4" targetNamespace="http://tempuri.org/DBA_CIPOST2019DataSet4.xsd" xmlns:mstns="http://tempuri.org/DBA_CIPOST2019DataSet4.xsd" xmlns="http://tempuri.org/DBA_CIPOST2019DataSet4.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="DBA_CIPOST2019ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DBA_CIPOST2019ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.FactuxD.Properties.Settings.GlobalReference.Default.DBA_CIPOST2019ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="AsistenciaTableAdapter" GeneratorDataComponentClassName="AsistenciaTableAdapter" Name="Asistencia" UserDataComponentName="AsistenciaTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DBA_CIPOST2019ConnectionString (Settings)" DbObjectName="DBA_CIPOST2019.dbo.Asistencia" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT fecha FROM dbo.Asistencia</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="fecha" DataSetColumn="fecha" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DBA_CIPOST2019DataSet4" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DBA_CIPOST2019DataSet4" msprop:Generator_UserDSName="DBA_CIPOST2019DataSet4">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Asistencia" msprop:Generator_TableClassName="AsistenciaDataTable" msprop:Generator_TableVarName="tableAsistencia" msprop:Generator_TablePropName="Asistencia" msprop:Generator_RowDeletingName="AsistenciaRowDeleting" msprop:Generator_RowChangingName="AsistenciaRowChanging" msprop:Generator_RowEvHandlerName="AsistenciaRowChangeEventHandler" msprop:Generator_RowDeletedName="AsistenciaRowDeleted" msprop:Generator_UserTableName="Asistencia" msprop:Generator_RowChangedName="AsistenciaRowChanged" msprop:Generator_RowEvArgName="AsistenciaRowChangeEvent" msprop:Generator_RowClassName="AsistenciaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="fecha" msprop:Generator_ColumnVarNameInTable="columnfecha" msprop:Generator_ColumnPropNameInRow="fecha" msprop:Generator_ColumnPropNameInTable="fechaColumn" msprop:Generator_UserColumnName="fecha" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

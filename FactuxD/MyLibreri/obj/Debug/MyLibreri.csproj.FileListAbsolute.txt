@@ -1,0 +1,12 @@
+C:\Users\Lenovo\Desktop\MiAppC#\FactuxD\MyLibreri\bin\Debug\MyLibreri.pdb
+C:\Users\Lenovo\Desktop\MiAppC#\FactuxD\MyLibreri\obj\Debug\MyLibreri.csprojAssemblyReference.cache
+C:\Users\Lenovo\Desktop\MiAppC#\FactuxD\MyLibreri\obj\Debug\MyLibreri.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\MiAppC#\FactuxD\MyLibreri\obj\Debug\MyLibreri.dll
+C:\Users\Lenovo\Desktop\MiAppC#\FactuxD\MyLibreri\obj\Debug\MyLibreri.pdb
+C:\Users\Lenovo\Desktop\Sistema_CipostUNT\FactuxD\MyLibreri\bin\Debug\MyLibreri.dll
+C:\Users\Lenovo\Desktop\Sistema_CipostUNT\FactuxD\MyLibreri\bin\Debug\MyLibreri.pdb
+C:\Users\Lenovo\Desktop\Sistema_CipostUNT\FactuxD\MyLibreri\obj\Debug\MyLibreri.csprojAssemblyReference.cache
+C:\Users\Lenovo\Desktop\Sistema_CipostUNT\FactuxD\MyLibreri\obj\Debug\MyLibreri.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\Sistema_CipostUNT\FactuxD\MyLibreri\obj\Debug\MyLibreri.dll
+C:\Users\Lenovo\Desktop\Sistema_CipostUNT\FactuxD\MyLibreri\obj\Debug\MyLibreri.pdb
+C:\Users\Lenovo\Desktop\Sistema_CipostUNT\FactuxD\MyLibreri\obj\Debug\MyLibreri.csproj.CopyComplete

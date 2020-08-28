@@ -1,0 +1,117 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Data.SqlClient;
+using MyLibreri;
+
+namespace FactuxD
+{
+    public partial class Pagos : FormMantenimiento
+    {
+        public Pagos()
+        {
+            InitializeComponent();
+        }
+        public override Boolean Guardar()
+        {
+            try
+            {
+                string cmd = string.Format(" exec spReistrarPagos '{0}','{1}','{2}','{3}'",
+                    txtCodigoAlumno.Text.Trim(),txtFechaPago.Text.Trim(), txtMOntoPago.Text.Trim(), txtPagoAnulado.Text.Trim());
+                Utilidades.Ejecutar(cmd);
+                MessageBox.Show("Se a registrado Correctamente");
+                return true;
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show("A ocurrido un error" + error.Message);
+                return false;
+            }
+        }
+        public override void Nuevo()
+        {
+            txtCodigoPago.Clear();
+            txtCodigoAlumno.Clear();
+            txtMOntoPago.Clear();
+            txtPagoAnulado.Clear();
+        }
+        public override void Eliminar()
+        {
+            try
+            {
+                string cmd = string.Format("exec SpEliminarPago '{0}'", txtCodigoPago.Text.Trim());
+                Utilidades.Ejecutar(cmd);
+                MessageBox.Show("A sido Elimnado");
+            }catch(Exception error)
+            {
+                MessageBox.Show(error.Message);
+            }
+        }
+        SqlConnection cn = new SqlConnection("Data Source=ROGER\\MSSQLSERVER16;Initial Catalog=DBA_CIPOST2019;User ID=sa;Password=sql");
+        public override void Consultar()
+        {
+
+         
+
+            SqlDataAdapter dc = new SqlDataAdapter("  select * from Pago", cn);
+            
+
+            DataTable TC = new DataTable();
+
+            dc.Fill(TC);
+
+            dataGrwPagos.DataSource = TC;
+          
+        }
+
+        //agregando un metodo para exportar 
+        public void ExportarDatos(DataGridView dataGrwPagos)
+        {
+            //crreamos un obejeto de aplicacion de microsoft office
+            Microsoft.Office.Interop.Excel.Application exportarExcel = new Microsoft.Office.Interop.Excel.Application();
+            exportarExcel.Application.Workbooks.Add(true);
+            int indiceColumna = 0;
+            foreach (DataGridViewColumn columna in dataGrwPagos.Columns)
+            {
+                indiceColumna++;
+
+                exportarExcel.Cells[1, indiceColumna] = columna.Name;
+            }
+            int IndiceFila = 0;
+            foreach (DataGridViewRow fila in dataGrwPagos.Rows)
+            {
+                IndiceFila++;
+                indiceColumna = 0;
+                foreach (DataGridViewColumn columna in dataGrwPagos.Columns)
+                {
+                    indiceColumna++;
+                    exportarExcel.Cells[IndiceFila + 1, indiceColumna] = fila.Cells[columna.Name].Value;
+                }
+            }
+            exportarExcel.Visible = true;
+
+        }
+
+
+        private void btnExportar_Click(object sender, EventArgs e)
+        {
+            ExportarDatos(dataGrwPagos);
+        }
+
+        private void dataGrwPagos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtCodigoPago.Text = dataGrwPagos.CurrentRow.Cells[0].Value.ToString();
+        }
+
+        private void Pagos_Load(object sender, EventArgs e)
+        {
+
+        }
+    }
+    }

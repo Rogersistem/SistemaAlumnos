@@ -1,0 +1,452 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{49A20A67-E08E-4644-A6EE-7A3BF47155DA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FactuxD</RootNamespace>
+    <AssemblyName>FactuxD</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1400.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1400.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1400.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="MyLibreri">
+      <HintPath>..\MyLibreri\bin\Debug\MyLibreri.dll</HintPath>
+    </Reference>
+    <Reference Include="sharpPDF">
+      <HintPath>..\..\..\..\Downloads\itexshap\sharpPDF.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.Reporting, Version=10.0.16.204, Culture=neutral, PublicKeyToken=a9d7983dfcc261be" />
+    <Reference Include="Telerik.ReportViewer.WinForms, Version=10.0.16.204, Culture=neutral, PublicKeyToken=a9d7983dfcc261be">
+      <SpecificVersion>True</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BackupDba.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BackupDba.Designer.cs">
+      <DependentUpon>BackupDba.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calculadora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calculadora.Designer.cs">
+      <DependentUpon>Calculadora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBA_CIPOST2019DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBA_CIPOST2019DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBA_CIPOST2019DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBA_CIPOST2019DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBA_CIPOST2019DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBA_CIPOST2019DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBA_CIPOST2019DataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBA_CIPOST2019DataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBA_CIPOST2019DataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBA_CIPOST2019DataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Horarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Horarios.Designer.cs">
+      <DependentUpon>Horarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListEvaluacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListEvaluacion.Designer.cs">
+      <DependentUpon>ListEvaluacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MantCursos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantCursos.Designer.cs">
+      <DependentUpon>MantCursos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MantenedorDocentes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenedorDocentes.Designer.cs">
+      <DependentUpon>MantenedorDocentes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Notas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Notas.Designer.cs">
+      <DependentUpon>Notas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContenedorPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContenedorPrincipal.Designer.cs">
+      <DependentUpon>ContenedorPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMantenimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMantenimiento.Designer.cs">
+      <DependentUpon>FormMantenimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz_Entrada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz_Entrada.Designer.cs">
+      <DependentUpon>Interfaz_Entrada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matricula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Matricula.Designer.cs">
+      <DependentUpon>Matricula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mant_Programas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mant_Programas.Designer.cs">
+      <DependentUpon>Mant_Programas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MantAlumnos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantAlumnos.Designer.cs">
+      <DependentUpon>MantAlumnos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pagos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pagos.Designer.cs">
+      <DependentUpon>Pagos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroAlumnos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroAlumnos.Designer.cs">
+      <DependentUpon>RegistroAlumnos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroUsuarios.Designer.cs">
+      <DependentUpon>RegistroUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportAsistencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportAsistencia.Designer.cs">
+      <DependentUpon>ReportAsistencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteMatricula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteMatricula.Designer.cs">
+      <DependentUpon>ReporteMatricula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteNotas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteNotas.Designer.cs">
+      <DependentUpon>ReporteNotas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="VentanaLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentanaLogin.Designer.cs">
+      <DependentUpon>VentanaLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VentanaAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentanaAdmin.Designer.cs">
+      <DependentUpon>VentanaAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VentanaUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentanaUser.Designer.cs">
+      <DependentUpon>VentanaUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte_Pagos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte_Pagos.Designer.cs">
+      <DependentUpon>Reporte_Pagos.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BackupDba.resx">
+      <DependentUpon>BackupDba.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calculadora.resx">
+      <DependentUpon>Calculadora.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Horarios.resx">
+      <DependentUpon>Horarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListEvaluacion.resx">
+      <DependentUpon>ListEvaluacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantCursos.resx">
+      <DependentUpon>MantCursos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantenedorDocentes.resx">
+      <DependentUpon>MantenedorDocentes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Notas.resx">
+      <DependentUpon>Notas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContenedorPrincipal.resx">
+      <DependentUpon>ContenedorPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMantenimiento.resx">
+      <DependentUpon>FormMantenimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz_Entrada.resx">
+      <DependentUpon>Interfaz_Entrada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Matricula.resx">
+      <DependentUpon>Matricula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mant_Programas.resx">
+      <DependentUpon>Mant_Programas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantAlumnos.resx">
+      <DependentUpon>MantAlumnos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pagos.resx">
+      <DependentUpon>Pagos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="RegistroAlumnos.resx">
+      <DependentUpon>RegistroAlumnos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistroUsuarios.resx">
+      <DependentUpon>RegistroUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportAsistencia.resx">
+      <DependentUpon>ReportAsistencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteMatricula.resx">
+      <DependentUpon>ReporteMatricula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteNotas.resx">
+      <DependentUpon>ReporteNotas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentanaAdmin.resx">
+      <DependentUpon>VentanaAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentanaLogin.resx">
+      <DependentUpon>VentanaLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="VentanaUser.resx">
+      <DependentUpon>VentanaUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte_Pagos.resx">
+      <DependentUpon>Reporte_Pagos.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DBA_CIPOST2019DataSet.xsc">
+      <DependentUpon>DBA_CIPOST2019DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DBA_CIPOST2019DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBA_CIPOST2019DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBA_CIPOST2019DataSet.xss">
+      <DependentUpon>DBA_CIPOST2019DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DBA_CIPOST2019DataSet1.xsc">
+      <DependentUpon>DBA_CIPOST2019DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DBA_CIPOST2019DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBA_CIPOST2019DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBA_CIPOST2019DataSet1.xss">
+      <DependentUpon>DBA_CIPOST2019DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DBA_CIPOST2019DataSet2.xsc">
+      <DependentUpon>DBA_CIPOST2019DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DBA_CIPOST2019DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBA_CIPOST2019DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBA_CIPOST2019DataSet2.xss">
+      <DependentUpon>DBA_CIPOST2019DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DBA_CIPOST2019DataSet3.xsc">
+      <DependentUpon>DBA_CIPOST2019DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DBA_CIPOST2019DataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBA_CIPOST2019DataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBA_CIPOST2019DataSet3.xss">
+      <DependentUpon>DBA_CIPOST2019DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DBA_CIPOST2019DataSet4.xsc">
+      <DependentUpon>DBA_CIPOST2019DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="DBA_CIPOST2019DataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBA_CIPOST2019DataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBA_CIPOST2019DataSet4.xss">
+      <DependentUpon>DBA_CIPOST2019DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Roger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

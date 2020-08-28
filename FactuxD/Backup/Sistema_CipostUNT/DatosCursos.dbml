@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DBA_CIPOST2019" Class="DatosCursosDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=ROGER\MSSQLSERVER16;Initial Catalog=DBA_CIPOST2019;User ID=sa" SettingsObjectName="FactuxD.Properties.Settings" SettingsPropertyName="DBA_CIPOST2019ConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Curso" Member="Curso">
+    <Type Name="Curso">
+      <Column Name="codCurso" Type="System.String" DbType="Char(8) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CurNomcurso" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="codPrograma" Type="System.String" DbType="Char(9)" CanBeNull="true" />
+      <Column Name="docCodigo" Type="System.String" DbType="Char(9)" CanBeNull="true" />
+      <Column Name="years" Type="System.String" DbType="Char(9)" CanBeNull="true" />
+      <Column Name="aula" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="horaInicio" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="horaTerminno" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.SpMantCursos" Method="SpMantCursos">
+    <ElementType Name="SpMantCursosResult">
+      <Column Name="codCurso" Type="System.String" DbType="Char(8) NOT NULL" CanBeNull="false" />
+      <Column Name="CurNomcurso" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="codPrograma" Type="System.String" DbType="Char(9)" CanBeNull="true" />
+      <Column Name="docCodigo" Type="System.String" DbType="Char(9)" CanBeNull="true" />
+      <Column Name="years" Type="System.String" DbType="Char(9)" CanBeNull="true" />
+      <Column Name="aula" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="horaInicio" Type="System.TimeSpan" DbType="Time" CanBeNull="true" />
+      <Column Name="horaTerminno" Type="System.TimeSpan" DbType="Time" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPultimoCurso" Method="SPultimoCurso">
+    <ElementType Name="SPultimoCursoResult">
+      <Column Name="codCurso" Type="System.String" DbType="Char(8) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+</Database>
